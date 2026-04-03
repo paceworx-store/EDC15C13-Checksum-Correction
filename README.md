@@ -23,3 +23,21 @@ The script requires both the **Original** and **Modified** binaries to correctly
 
 ```bash
 python checksum.py <ORIGINAL_FILE> <MODIFIED_FILE>
+```
+
+### Process Output
+* Scans for byte differences between files.
+* Validates checksums for both ORI and MOD versions.
+* Generates a third file: `FIXED_<MOD_FILENAME>.bin`.
+
+## 🛠 Requirements
+
+* **Python 3.x**
+* Zero external dependencies (uses standard `struct`, `os`, and `sys` libraries).
+
+---
+
+## ⚡ Disclaimer
+This tool is designed for professional ECU repair and development. Improperly checksummed files can result in a non-starting vehicle or a bricked ECU. Use at your own risk.
+
+**Developed for Paceworx.**
